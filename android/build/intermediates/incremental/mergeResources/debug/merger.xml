@@ -242,9 +242,9 @@
                 </string>
                 <string name="pull_to_refresh" >下拉刷新
                 </string>
-                <string name="share" >分享
-                </string>
                 <string name="share_to" >分享到
+                </string>
+                <string name="share" >分享
                 </string>
             </file>
             <file
@@ -258,19 +258,19 @@
                 </string>
                 <string name="facebook" >Facebook
                 </string>
-                <string name="line_client_inavailable" >目前您的Line版本过低或未安装易信，需要安装Line才能使用
+                <string name="instagram" >Instagram
                 </string>
                 <string name="vkontakte" >VK
                 </string>
-                <string name="instagram" >Instagram
-                </string>
-                <string name="wechatmoments" >微信朋友圈
+                <string name="line_client_inavailable" >目前您的Line版本过低或未安装易信，需要安装Line才能使用
                 </string>
                 <string name="tencentweibo" >腾讯微博
                 </string>
-                <string name="kaixin" >开心网
+                <string name="wechatmoments" >微信朋友圈
                 </string>
                 <string name="evernote" >印象笔记
+                </string>
+                <string name="kaixin" >开心网
                 </string>
                 <string name="douban" >豆瓣
                 </string>
@@ -300,19 +300,19 @@
                 </string>
                 <string name="instagram_client_inavailable" >Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！
                 </string>
-                <string name="pinterest" >Pinterest
-                </string>
                 <string name="flickr" >Flickr
+                </string>
+                <string name="pinterest" >Pinterest
                 </string>
                 <string name="twitter" >Twitter
                 </string>
                 <string name="email" >邮件
                 </string>
-                <string name="wechatfavorite" >微信收藏
+                <string name="dropbox" >Dropbox
                 </string>
                 <string name="googleplus" >Google+
                 </string>
-                <string name="dropbox" >Dropbox
+                <string name="wechatfavorite" >微信收藏
                 </string>
                 <string name="qq_client_inavailable" >QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！
                 </string>
@@ -320,37 +320,37 @@
                 </string>
                 <string name="share_to_qzone_default" >来自%s的分享
                 </string>
-                <string name="mingdao_share_content" >网页分享
-                </string>
                 <string name="use_login_button" >请改用“登录”按钮
+                </string>
+                <string name="mingdao_share_content" >网页分享
                 </string>
                 <string name="sohusuishenkan" >搜狐随身看
                 </string>
                 <string name="shortmessage" >信息
                 </string>
-                <string name="wechat_client_inavailable" >目前您的微信版本过低或未安装微信，需要安装微信才能使用
-                </string>
                 <string name="sinaweibo" >新浪微博
+                </string>
+                <string name="wechat_client_inavailable" >目前您的微信版本过低或未安装微信，需要安装微信才能使用
                 </string>
                 <string name="weibo_oauth_regiseter" >应用授权
                 </string>
                 <string name="neteasemicroblog" >网易微博
                 </string>
-                <string name="website" >http://www.shareSDK.cn
+                <string name="share_to_qq" >分享到QQ
                 </string>
                 <string name="weibo_upload_content" >分享图片
                 </string>
-                <string name="share_to_qq" >分享到QQ
-                </string>
-                <string name="yixinmoments" >易信朋友圈
+                <string name="website" >http://www.shareSDK.cn
                 </string>
                 <string name="mingdao" >明道
+                </string>
+                <string name="yixinmoments" >易信朋友圈
                 </string>
             </file>
             <file
                 path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\res\values\strings.xml"
                 qualifiers="" >
-                <string name="app_name" >颜色IQ推理
+                <string name="app_name" >颜色推理
                 </string>
             </file>
             <file
@@ -407,9 +407,9 @@ true
                 </color>
                 <color name="f.s" >#999999
                 </color>
-                <color name="g.green" >#74b626
-                </color>
                 <color name="b.full" >#D5000000
+                </color>
+                <color name="g.green" >#74b626
                 </color>
                 <color name="f.w" >#fff
                 </color>
@@ -417,19 +417,19 @@ true
                 </color>
                 <color name="list.even" >#f7f7f7
                 </color>
-                <color name="umipay_oauth_textcolor_pressed" >#fff
+                <color name="highlight" >#f78830
                 </color>
                 <color name="transparent" >#00000000
                 </color>
-                <color name="highlight" >#f78830
+                <color name="umipay_oauth_textcolor_pressed" >#fff
                 </color>
                 <color name="umipay_oauth_textcolor_normal" >#dedede
                 </color>
                 <color name="g.gray" >#bfbfbf
                 </color>
-                <color name="list.light" >#fff9c9
-                </color>
                 <color name="strip" >#e8e8e8
+                </color>
+                <color name="list.light" >#fff9c9
                 </color>
                 <color name="f.b" >#000
                 </color>
@@ -616,17 +616,6 @@ vertical
                 </style>
 
                 <style
-                    name="um_titlebar_ly"
-                    parent="um_block" >
-                    <item name="android:layout_height">
-66dp
-                    </item>
-                    <item name="android:layout_gravity">
-center_horizontal
-                    </item>
-                </style>
-
-                <style
                     name="um_oauth_login_land"
                     parent="um_oauth_login" >
                     <item name="android:orientation">
@@ -640,6 +629,40 @@ false
                     </item>
                     <item name="android:layout_gravity">
 center_horizontal
+                    </item>
+                </style>
+
+                <style
+                    name="um_titlebar_ly"
+                    parent="um_block" >
+                    <item name="android:layout_height">
+66dp
+                    </item>
+                    <item name="android:layout_gravity">
+center_horizontal
+                    </item>
+                </style>
+
+                <style
+                    name="um_toast_title"
+                    parent="um_wr" >
+                    <item name="android:layout_gravity">
+center_horizontal
+                    </item>
+                    <item name="android:gravity">
+center_horizontal
+                    </item>
+                    <item name="android:layout_marginLeft">
+5dp
+                    </item>
+                    <item name="android:layout_marginRight">
+5dp
+                    </item>
+                    <item name="android:textColor">
+#fff
+                    </item>
+                    <item name="android:textSize">
+14sp
                     </item>
                 </style>
 
@@ -684,25 +707,13 @@ bottom|left
                 </style>
 
                 <style
-                    name="um_toast_title"
-                    parent="um_wr" >
-                    <item name="android:layout_gravity">
-center_horizontal
+                    name="um_reg_login_ly_land"
+                    parent="um_reg_login_ly" >
+                    <item name="android:orientation">
+vertical
                     </item>
-                    <item name="android:gravity">
-center_horizontal
-                    </item>
-                    <item name="android:layout_marginLeft">
-5dp
-                    </item>
-                    <item name="android:layout_marginRight">
-5dp
-                    </item>
-                    <item name="android:textColor">
-#fff
-                    </item>
-                    <item name="android:textSize">
-14sp
+                    <item name="android:layout_marginTop">
+10dp
                     </item>
                 </style>
 
@@ -711,17 +722,6 @@ center_horizontal
                     parent="fn" >
                     <item name="android:textSize">
 12sp
-                    </item>
-                </style>
-
-                <style
-                    name="um_reg_login_ly_land"
-                    parent="um_reg_login_ly" >
-                    <item name="android:orientation">
-vertical
-                    </item>
-                    <item name="android:layout_marginTop">
-10dp
                     </item>
                 </style>
 
@@ -1209,17 +1209,6 @@ fill_parent
                 </style>
 
                 <style
-                    name="fn"
-                    parent="text" >
-                    <item name="android:layout_width">
-wrap_content
-                    </item>
-                    <item name="android:layout_height">
-wrap_content
-                    </item>
-                </style>
-
-                <style
                     name="um_toast_content_parent"
                     parent="um_block" >
                     <item name="android:gravity">
@@ -1237,6 +1226,28 @@ vertical
                 </style>
 
                 <style
+                    name="fn"
+                    parent="text" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                </style>
+
+                <style
+                    name="um_insert_land"
+                    parent="um_insert" >
+                    <item name="android:layout_gravity">
+left
+                    </item>
+                    <item name="android:layout_marginTop">
+-50dp
+                    </item>
+                </style>
+
+                <style
                     name="h1"
                     parent="h2" >
                     <item name="android:layout_width">
@@ -1250,17 +1261,6 @@ center
                     </item>
                     <item name="android:singleLine">
 true
-                    </item>
-                </style>
-
-                <style
-                    name="um_insert_land"
-                    parent="um_insert" >
-                    <item name="android:layout_gravity">
-left
-                    </item>
-                    <item name="android:layout_marginTop">
--50dp
                     </item>
                 </style>
 
@@ -1323,6 +1323,18 @@ true
                     </item>
                 </style>
 
+                <style name="um_block" >
+                    <item name="android:layout_width">
+fill_parent
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:background">
+@null
+                    </item>
+                </style>
+
                 <style
                     name="h2"
                     parent="fn" >
@@ -1335,18 +1347,6 @@ true
                     <!-- item name="android:textStyle">bold</item -->
                     <item name="android:gravity">
 left
-                    </item>
-                </style>
-
-                <style name="um_block" >
-                    <item name="android:layout_width">
-fill_parent
-                    </item>
-                    <item name="android:layout_height">
-wrap_content
-                    </item>
-                    <item name="android:background">
-@null
                     </item>
                 </style>
 
@@ -1446,20 +1446,6 @@ fill_parent
                 </style>
 
                 <style
-                    name="um_toast_content_child"
-                    parent="um_block" >
-                    <item name="android:layout_centerInParent">
-true
-                    </item>
-                    <item name="android:gravity">
-center
-                    </item>
-                    <item name="android:orientation">
-vertical
-                    </item>
-                </style>
-
-                <style
                     name="um_toast_title_ly"
                     parent="um_block" >
                     <item name="android:layout_marginTop">
@@ -1483,21 +1469,16 @@ horizontal
                 </style>
 
                 <style
-                    name="um_box_row_ly"
+                    name="um_toast_content_child"
                     parent="um_block" >
-                    <item name="android:layout_marginTop">
-6dp
+                    <item name="android:layout_centerInParent">
+true
                     </item>
-                </style>
-
-                <style
-                    name="um_oauth_login"
-                    parent="um_block" >
+                    <item name="android:gravity">
+center
+                    </item>
                     <item name="android:orientation">
 vertical
-                    </item>
-                    <item name="android:layout_centerHorizontal">
-true
                     </item>
                 </style>
 
@@ -1516,6 +1497,25 @@ true
                 </style>
 
                 <style
+                    name="um_oauth_login"
+                    parent="um_block" >
+                    <item name="android:orientation">
+vertical
+                    </item>
+                    <item name="android:layout_centerHorizontal">
+true
+                    </item>
+                </style>
+
+                <style
+                    name="um_box_row_ly"
+                    parent="um_block" >
+                    <item name="android:layout_marginTop">
+6dp
+                    </item>
+                </style>
+
+                <style
                     name="um_wr_h"
                     parent="um_wr" >
                     <item name="android:orientation">
@@ -1530,17 +1530,17 @@ horizontal
                 </string>
                 <string name="share_to" >Share to 
                 </string>
-                <string name="pull_to_refresh" >Pull down to refresh
-                </string>
-                <string name="sharing" >Sharing operation is working in the background…
+                <string name="release_to_refresh" >Release to refresh
                 </string>
                 <string name="share_canceled" >Operation canceled
                 </string>
-                <string name="release_to_refresh" >Release to refresh
+                <string name="sharing" >Sharing operation is working in the background…
                 </string>
-                <string name="share_completed" >Operation succeeded
+                <string name="pull_to_refresh" >Pull down to refresh
                 </string>
                 <string name="multi_share" >Photo Sharing
+                </string>
+                <string name="share_completed" >Operation succeeded
                 </string>
                 <string name="shake2share" >Shake your phone!
                 </string>
@@ -1564,23 +1564,23 @@ horizontal
                 </string>
                 <string name="share_to_mingdao" >Share To Mingdao
                 </string>
-                <string name="email" >Email
-                </string>
                 <string name="youdao" >Youdao
                 </string>
-                <string name="neteasemicroblog" >Netease Microblog
+                <string name="email" >Email
                 </string>
                 <string name="linkedin" >Linked in
                 </string>
-                <string name="instagram" >Instagram
+                <string name="neteasemicroblog" >Netease Microblog
                 </string>
-                <string name="foursquare" >FourSquare
+                <string name="instagram" >Instagram
                 </string>
                 <string name="qq" >QQ
                 </string>
-                <string name="weibo_oauth_regiseter" >Authorization
+                <string name="foursquare" >FourSquare
                 </string>
                 <string name="vkontakte" >VK
+                </string>
+                <string name="weibo_oauth_regiseter" >Authorization
                 </string>
                 <string name="website" >http://www.shareSDK.cn
                 </string>
@@ -1608,21 +1608,21 @@ horizontal
                 </string>
                 <string name="mingdao" >Mingdao
                 </string>
-                <string name="instagram_client_inavailable" >Instagram client not exists or the version is too low
-                </string>
                 <string name="pinterest" >Pinterest
                 </string>
-                <string name="line" >Line
+                <string name="instagram_client_inavailable" >Instagram client not exists or the version is too low
                 </string>
                 <string name="share_to_qzone_default" >Shared from %s
+                </string>
+                <string name="line" >Line
                 </string>
                 <string name="renren" >Renren
                 </string>
                 <string name="share_to_qzone" >Share To QZone
                 </string>
-                <string name="wechat_client_inavailable" >Wechat client not exists or the version is too low
-                </string>
                 <string name="pinterest_client_inavailable" >Pinterest client not exists or the version is too low
+                </string>
+                <string name="wechat_client_inavailable" >Wechat client not exists or the version is too low
                 </string>
                 <string name="qq_client_inavailable" >Mobile QQ client not exists or the version is too low
                 </string>
@@ -1632,25 +1632,25 @@ horizontal
                 </string>
                 <string name="sohusuishenkan" >Sohu Suishenkan
                 </string>
-                <string name="google_plus_client_inavailable" >Google+ client not exists or the version is too low
-                </string>
                 <string name="tencentweibo" >Tencent Weibo
                 </string>
-                <string name="yixin_client_inavailable" >Yixin client not exists or the version is too low
+                <string name="google_plus_client_inavailable" >Google+ client not exists or the version is too low
                 </string>
                 <string name="dropbox" >Dropbox
                 </string>
-                <string name="wechat" >Wechat
+                <string name="yixin_client_inavailable" >Yixin client not exists or the version is too low
                 </string>
                 <string name="tumblr" >Tumblr
+                </string>
+                <string name="wechat" >Wechat
                 </string>
                 <string name="wechatmoments" >Wechat Moments
                 </string>
                 <string name="sinaweibo" >Sina Weibo
                 </string>
-                <string name="douban" >Douban
-                </string>
                 <string name="evernote" >Evernote
+                </string>
+                <string name="douban" >Douban
                 </string>
                 <string name="wechatfavorite" >Wechat Favorite
                 </string>

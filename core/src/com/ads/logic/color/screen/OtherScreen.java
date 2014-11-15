@@ -77,6 +77,7 @@ public class OtherScreen extends BaseScreen {
         starLabel = new Label(str, labelStyle);
         starLabel.setPosition(Assets.WIDTH - bounds.width - Assets.TOPBAR_HEIGHT, getY_bar());
 
+        removeLayerBg();
         addActor(starLabel);
         addActor(shareBtn);
         addActor(adBtn);

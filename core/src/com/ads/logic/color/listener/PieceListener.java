@@ -47,7 +47,7 @@ public class PieceListener extends GestureDetector.GestureAdapter {
         downActor = null;
         if (!gameScreen.isSuspend()) {
             stage.getCamera().unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 9; i++) {
                 Piece piece = (Piece) pieceActors.get(i);
                 Rectangle bounds = new Rectangle(piece.getX(), piece.getY(), piece.getWidth(), piece.getHeight());
                 if (bounds.contains(touchPoint.x, touchPoint.y)) {

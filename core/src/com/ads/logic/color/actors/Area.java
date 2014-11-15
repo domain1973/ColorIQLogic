@@ -28,7 +28,7 @@ public class Area extends Image {
         pieceId = -1;
         spriteSize = Assets.PIECE_SIZE;
         float top = Assets.HEIGHT - spriteSize - Assets.TOPBAR_HEIGHT;
-        float left = 0;
+        float left = Assets.AREA_SIZE;
         switch (areaId) {
             case 0:
                 x = left;

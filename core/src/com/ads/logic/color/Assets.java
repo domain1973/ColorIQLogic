@@ -72,6 +72,8 @@ public class Assets {
     public static TextureRegion gate_3star;
     public static TextureRegion gate_lock;
     public static TextureRegion lock;
+    public static TextureRegion cannot;
+    public static TextureRegion yy;
     public static TextureRegion[] cubes;
     public static float TOPBAR_HEIGHT;//顶部按钮条的高度
     public static float WIDTH;
@@ -89,13 +91,14 @@ public class Assets {
     public static float AREA_SIZE;
     public static float LEVEL_IMAGE_SIZE;
     public static float LEVEL_IMAGE_OFF_SIZE;
-    public static int LEVEL_MAX = 6;
+    public static int LEVEL_MAX = 5;
 
     public static List<Sprite> levels;
     public static Sprite[] pieces;
     public static BitmapFont gameFont;
     public static BitmapFont otherFont;
     public static BitmapFont readmeFont;
+    public static BitmapFont quizFont;
 
     public static void load() {
         assetManager = new AssetManager();
@@ -103,6 +106,7 @@ public class Assets {
         assetManager.load("puzzle.fnt", BitmapFont.class);
         assetManager.load("game.fnt", BitmapFont.class);
         assetManager.load("readme.fnt", BitmapFont.class);
+        assetManager.load("quiz.fnt", BitmapFont.class);
         assetManager.load("data/musicbg.mp3", Music.class); //加载背景音乐
         assetManager.load("data/btn.wav", Sound.class);
         assetManager.load("data/star.mp3", Sound.class);
@@ -110,6 +114,7 @@ public class Assets {
         gameFont = assetManager.get("puzzle.fnt", BitmapFont.class);
         otherFont = assetManager.get("game.fnt", BitmapFont.class);
         readmeFont = assetManager.get("readme.fnt", BitmapFont.class);
+        quizFont = assetManager.get("quiz.fnt", BitmapFont.class);
         btnSound = assetManager.get("data/btn.wav", Sound.class);
         starSound = assetManager.get("data/star.mp3", Sound.class);
         musicbg = assetManager.get("data/musicbg.mp3", Music.class);    //加载背景音乐
@@ -179,6 +184,8 @@ public class Assets {
         resetGameBtn = atlas.findRegion("resetgamebtn");
         levelPreBtn = atlas.findRegion("levelpre");
         levelNextBtn = atlas.findRegion("levelnext");
+        cannot = atlas.findRegion("cannot");
+        yy = atlas.findRegion("yy");
 
         gate_0star = atlas.findRegion("gate_0star");
         gate_1star = atlas.findRegion("gate_1star");

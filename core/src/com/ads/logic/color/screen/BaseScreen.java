@@ -35,6 +35,7 @@ public class BaseScreen extends ScreenAdapter {
         Assets.gameFont.setScale(scale);
         Assets.otherFont.setScale(scale);
         Assets.readmeFont.setScale(scale);
+        Assets.quizFont.setScale(scale);
     }
 
     @Override
@@ -86,8 +87,8 @@ public class BaseScreen extends ScreenAdapter {
         return Assets.otherFont;
     }
 
-    public BitmapFont getReadmeFont() {
-        return Assets.readmeFont;
+    public BitmapFont getQuizFont() {
+        return Assets.quizFont;
     }
 
     public Stage getStage() {

@@ -71,7 +71,7 @@ public class AdGameScreen extends BaseScreen {
     }
 
     private void createAdLabel() {
-        String str = "爱迪出品";
+        String str = "爱迪精品";
         BitmapFont font = getOtherFont();
         Label l = new Label(str, new Label.LabelStyle(font, Color.WHITE));
         float w = font.getBounds(str).width;

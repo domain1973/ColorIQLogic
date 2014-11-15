@@ -49,8 +49,8 @@
                 name="puzzle.png"
                 path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\puzzle.png" />
             <file
-                name="ShareSDK.xml"
-                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\ShareSDK.xml" />
+                name="readme.fnt"
+                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\readme.fnt" />
             <file
                 name="readme.hiero"
                 path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\readme.hiero" />
@@ -58,8 +58,20 @@
                 name="readme.png"
                 path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\readme.png" />
             <file
-                name="readme.fnt"
-                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\readme.fnt" />
+                name="ShareSDK.xml"
+                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\ShareSDK.xml" />
+            <file
+                name="quiz.fnt"
+                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\quiz.fnt" />
+            <file
+                name="quiz.png"
+                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\quiz.png" />
+            <file
+                name="quiz.hiero"
+                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\quiz.hiero" />
+            <file
+                name="p4.png"
+                path="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\assets\p4.png" />
         </source>
     </dataSet>
     <dataSet config="debug" >

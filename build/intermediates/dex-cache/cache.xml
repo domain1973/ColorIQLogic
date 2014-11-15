@@ -20,17 +20,17 @@
         revision="19.1.0"
         sha1="e5f0255fe33abea21b7fe25b753dc9f5c17886a3"/>
     <item
-        dex="F:\ADWisdomHouse\Game\Puzzle\DisneyPuzzle\android\build\intermediates\pre-dexed\debug\mframework-a665a6bb91df88c5a759f5cb4d921a431dee29f2.jar"
-        jar="F:\ADWisdomHouse\Game\Puzzle\DisneyPuzzle\android\libs\mframework.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="25509058b34a5ee08dbf66e57078e3083735d200"/>
-    <item
         dex="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\build\intermediates\pre-dexed\debug\gdx-1.1.0-097daca50f1daa363ba4898ae0a70e0301ccd62f.jar"
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.1.0\686f5a609c717eb0769d3b954c501a49bf4fe351\gdx-1.1.0.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="686f5a609c717eb0769d3b954c501a49bf4fe351"/>
+    <item
+        dex="F:\ADWisdomHouse\Game\Puzzle\DisneyPuzzle\android\build\intermediates\pre-dexed\debug\mframework-a665a6bb91df88c5a759f5cb4d921a431dee29f2.jar"
+        jar="F:\ADWisdomHouse\Game\Puzzle\DisneyPuzzle\android\libs\mframework.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="25509058b34a5ee08dbf66e57078e3083735d200"/>
     <item
         dex="F:\ADWisdomHouse\Game\Puzzle\DisneyPuzzle\android\build\intermediates\pre-dexed\debug\android-support-v4-c433f62a84c43c28bb34b61ea3a643f72dcb643c.jar"
         jar="F:\ADWisdomHouse\Game\Puzzle\DisneyPuzzle\android\libs\android-support-v4.jar"
@@ -50,23 +50,23 @@
         revision="19.1.0"
         sha1="9f246b825db34f2593a3a20f93a196d2f291785a"/>
     <item
-        dex="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\build\intermediates\pre-dexed\debug\gdx-jnigen-6ac53f370b32264f63f1835c4cbe70df53dd1a64.jar"
-        jar="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\libs\gdx-jnigen.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="d952baf9ce9e225a91229de2f900ab0eb1c5de90"/>
-    <item
         dex="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\build\intermediates\pre-dexed\debug\bcs-sdk-java_1.4.5-7bec8e75a22893fb217e719829a5bcd802e986ce.jar"
         jar="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\libs\bcs-sdk-java_1.4.5.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="15f41c69af9d54965ad0692be9542f9f4d48f9c9"/>
     <item
+        dex="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\build\intermediates\pre-dexed\debug\gdx-jnigen-6ac53f370b32264f63f1835c4cbe70df53dd1a64.jar"
+        jar="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\libs\gdx-jnigen.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d952baf9ce9e225a91229de2f900ab0eb1c5de90"/>
+    <item
         dex="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\build\intermediates\pre-dexed\debug\core-1.0-9e498ab92b4c461a04057e91f5c35a26eb1ac021.jar"
         jar="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\core\build\libs\core-1.0.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="67c4e361cc5dcf07a50da337551b012e21ed8a6d"/>
+        sha1="070a339ebeca3f42103f1cb0244634150c4f4c1b"/>
     <item
         dex="F:\ADWisdomHouse\Game\IQLogic\ColorIQLogic\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.1.0-ae3334d5a87b3e7a55b5b1b4150a531a5e2def49.jar"
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.1.0\be72ba2987612670c7e9533bdaaa999955752237\gdx-backend-android-1.1.0.jar"

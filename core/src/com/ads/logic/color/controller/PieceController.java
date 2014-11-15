@@ -17,8 +17,8 @@ public class PieceController extends IController {
         for (int i = 0; i < 9; i++) {
             Piece piece = new Piece(i);
             addActor(piece);
-            if (i == 2) {
-                fixAreaBounds = new Rectangle(piece.getX(), piece.getY(), Assets.AREA_SIZE * 2, Assets.AREA_SIZE * 2);
+            if (i == 7) {
+                fixAreaBounds = new Rectangle(piece.getX(), piece.getY(), Assets.PIECE_SIZE * 3, Assets.PIECE_SIZE * 3);
             }
         }
     }

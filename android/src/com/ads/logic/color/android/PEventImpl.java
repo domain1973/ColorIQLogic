@@ -31,6 +31,7 @@ import net.umipay.android.UmiPaymentInfo;
 import net.umipay.android.poll.SmsReceiverService;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -55,9 +56,12 @@ public class PEventImpl extends PEvent {
     private File adAtlas = new File(path + "ad.atlas");
     private String urlStr = "/url.txt";
     private File url = new File(path + "url.txt");
+    private String yybStr = "/ColorIQLogic.txt";
+    private File yyb = new File(path + "ColorIQLogic.txt");
     private static final String adsUrl = "http://ads360.duapp.com/House";
     private static final String gameUrl = adsUrl + "/ColorLogic";
-    public static final String SHARE_TITLE = "有趣的迷宫";
+    private static String yybUrl;
+    public static final String SHARE_TITLE = "有趣的IQ推理";
     public static final String SHARE_TEXT = "太难了,我不行,有种你来!\n" +
             "点击后,请使用浏览器下载安装.";
     private AndroidLauncher launcher;
@@ -65,7 +69,7 @@ public class PEventImpl extends PEvent {
     private ProgressDialog progressDialog;
     private Handler handler;
     private String gameLogoImage;
-    private String TITLE = "颜色IQ逻辑";;
+    private String TITLE = "颜色推理";;
 
     public PEventImpl(AndroidLauncher androidLauncher) {
         launcher = androidLauncher;
@@ -373,7 +377,11 @@ public class PEventImpl extends PEvent {
                     oks.setTitle(SHARE_TITLE);
                     oks.setText(SHARE_TEXT);
                     oks.setImagePath(gameLogoImage);
-                    oks.setUrl(gameUrl);
+                    if (yybUrl != null && yybUrl.length() > 0) {
+                        oks.setUrl(yybUrl);
+                    } else {
+                        oks.setUrl(gameUrl);
+                    }
                     // 令编辑页面显示为Dialog模式
                     oks.setDialogMode();
                     // 在自动授权时可以禁用SSO方式
@@ -478,7 +486,13 @@ public class PEventImpl extends PEvent {
             baiduBCS.setDefaultEncoding("UTF-8"); // Default UTF-8
             getObjectWithDestFile(baiduBCS, adAtlasStr, adAtlas);
             getObjectWithDestFile(baiduBCS, urlStr, url);
+            getObjectWithDestFile(baiduBCS, yybStr, yyb);
             getObjectWithDestFile(baiduBCS, "/ad.png" , new File(path + "ad.png"));
+
+            FileInputStream fis = new FileInputStream(yyb);
+            byte[] bts = new byte[128];
+            fis.read(bts);
+            yybUrl = new String(bts).trim();
         } catch (Exception e) {
             e.printStackTrace();
         }

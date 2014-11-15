@@ -77,7 +77,7 @@ public class GameScreen extends BaseScreen {
         if (!isShow()) {
             super.show();
             timeStr = "00:00";
-            areaCtrl = new AreaController(level, IController.AREA_CTRL);
+            areaCtrl = new AreaController(IController.AREA_CTRL);
             addActor(areaCtrl);
             pieceCtrl = new PieceController(IController.PIECE_CTRL);
             addActor(pieceCtrl); // 添加块组到舞台
@@ -88,6 +88,7 @@ public class GameScreen extends BaseScreen {
             addActor(challengeCtrl);
             initEffect();
             createTimer();
+            removeLayerBg();
             setShow(true);
         }
         multiplexer = new InputMultiplexer(); // 多输入接收器
@@ -204,9 +205,10 @@ public class GameScreen extends BaseScreen {
         labCount.setPosition(Assets.WIDTH - 3 * Assets.TOPBAR_HEIGHT - w / 3, Assets.HEIGHT - Assets.TOPBAR_HEIGHT / 2);
         addActor(labCount);
 
-        String s = "按照下方的规则,移动上方右侧的圆圈到九宫格中.";
-        bounds = getReadmeFont().getBounds(s);
-        Label c = new Label(s, new Label.LabelStyle(getReadmeFont(), Color.YELLOW));
+        String s = "按下面的规则,移动左上侧圆圈到右上侧九宫格中.";
+        BitmapFont quizFont = getQuizFont();
+        bounds = quizFont.getBounds(s);
+        Label c = new Label(s, new Label.LabelStyle(quizFont, Color.WHITE));
         c_top = Assets.HEIGHT - Assets.AREA_SIZE - Assets.TOPBAR_HEIGHT - bounds.height;
         c.setPosition(0, c_top);
         addActor(c);
@@ -223,7 +225,7 @@ public class GameScreen extends BaseScreen {
         executStarCount.scheduleAtFixedRate(new Runnable() {
             public void run() {
                 areaId++;
-                if (areaId < 3) {
+                if (areaId < 6) {
                     Assets.playSound(Assets.starSound);
                 }
             }
@@ -254,7 +256,7 @@ public class GameScreen extends BaseScreen {
                 reset();
                 isUsingHelp = false;
             }
-            if (areaId < 3) {
+            if (areaId < 6) {
                 int temp = areaId;//防止定时器修改值不同步
                 Area area = (Area) areaCtrl.getChildren().get(areaId);
                 getBatch().begin();
@@ -263,10 +265,10 @@ public class GameScreen extends BaseScreen {
                 getBatch().end();
                 Integer[] answers = Answer.VALUES.get(gateNum);
                 Integer pieceId = answers[temp];
-                Piece piece = (Piece) pieces[pieceId];
+                Piece piece = (Piece) pieces[pieceId-1];
                 piece.setPosition(area.getX(), area.getY());
                 piece.setArea(temp);
-                area.setPieceId(pieceId);
+                area.setPieceId(pieceId-1);
             } else {
                 isUsedHelp = false;
                 areaId = 0;
@@ -286,7 +288,7 @@ public class GameScreen extends BaseScreen {
     private void handlePass() {
         if (!isPass) {
             Gdx.input.setInputProcessor(multiplexer);
-            //handleGate();
+            handleGate();
         }
         if (openResultWin) {
             computerStarNum();

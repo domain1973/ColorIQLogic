@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.ads.logic.color.Answer;
 import com.ads.logic.color.Logic;
 import com.ads.logic.color.Settings;
+import com.ads.logic.color.screen.MainScreen;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 
@@ -63,9 +64,14 @@ public class AndroidLauncher extends AndroidApplication implements InitCallbackL
         initPayProcessListener();
     }
 
+    @Override
+    public void onBackPressed() {
+        return;
+    }
+
     private void addAdManager() {
         //banner广告
-        AdManager.getInstance(this).init("123fc859610f597d", "13be68a226b9f94c", false);
+        AdManager.getInstance(this).init("b3c85b0590017aa8", "baedd96cf8795f1d", false);
         // 实例化LayoutParams(重要)
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.WRAP_CONTENT,
@@ -104,9 +110,9 @@ public class AndroidLauncher extends AndroidApplication implements InitCallbackL
         //初始化参数
         GameParamInfo gameParamInfo = new GameParamInfo();
         //您的应用的AppId
-        gameParamInfo.setAppId("123fc859610f597d");
+        gameParamInfo.setAppId("b3c85b0590017aa8");
         //您的应用的AppSecret123fc859610f597d
-        gameParamInfo.setAppSecret("13be68a226b9f94c");
+        gameParamInfo.setAppSecret("baedd96cf8795f1d");
         //false 订单充值成功后是使用服务器通知 true 订单充值成功后使用客户端回调
         gameParamInfo.setSDKCallBack(true);
         //调用sdk初始化接口
@@ -130,10 +136,6 @@ public class AndroidLauncher extends AndroidApplication implements InitCallbackL
                 }
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
     }
 
     public boolean isNetwork() {

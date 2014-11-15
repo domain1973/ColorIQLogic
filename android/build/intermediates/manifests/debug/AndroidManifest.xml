@@ -44,22 +44,7 @@
         <activity
             android:name="net.youmi.android.AdBrowser"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Light.NoTitleBar" >
-        </activity>
-
-        <service
-            android:name="net.youmi.android.AdService"
-            android:exported="false" >
-        </service>
-
-        <receiver android:name="net.youmi.android.AdReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
-
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
             android:name="net.umipay.android.UmipayBrowser"
             android:theme="@style/UmipayTheme_NoFullscreen" />
@@ -68,15 +53,13 @@
             android:configChanges="orientation|keyboardHidden"
             android:excludeFromRecents="true"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustResize" >
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.unionpay.uppay.PayActivity"
             android:configChanges="orientation|keyboardHidden|screenLayout"
             android:excludeFromRecents="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.UPPay" >
-        </activity>
+            android:theme="@style/Theme.UPPay" />
         <activity
             android:name="cn.sharesdk.framework.ShareSDKUIShell"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -100,12 +83,22 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" />
+        <service
             android:name="net.umipay.android.poll.Push_Poll_service"
             android:exported="false" />
         <service
             android:name="net.umipay.android.poll.SmsReceiverService"
             android:exported="false" />
 
+        <receiver android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
         <receiver android:name="net.umipay.android.poll.Push_Boot_Receiver" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />

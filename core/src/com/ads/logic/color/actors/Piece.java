@@ -22,7 +22,7 @@ public class Piece extends Image {
         float y = 0;
         float spriteSize = Assets.PIECE_SIZE;
         float top = Assets.HEIGHT - Assets.PIECE_SIZE - Assets.TOPBAR_HEIGHT;
-        float left = Assets.AREA_SIZE;
+        float left = 0;
         switch (id) {
             case 0:
                 x = left;

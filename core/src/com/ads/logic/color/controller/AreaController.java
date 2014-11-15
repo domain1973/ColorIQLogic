@@ -13,7 +13,7 @@ public class AreaController extends IController {
     private Area[] areas;
     private Rectangle bounds;
 
-    public AreaController(int level, String name) {
+    public AreaController(String name) {
         setName(name);
         areas = new Area[9];
         buildArea();
